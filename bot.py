@@ -56,11 +56,14 @@ def gateway_key():
 
 
 def persona_text():
+    # 以 # 开头的行当注释丢掉：以前是整文件原样发给模型，
+    # 结果文件里自带的说明文字、被注释掉的旧人设全变成"设定"喂进去了
     try:
         with open(PERSONA_PATH, encoding="utf-8") as f:
-            return f.read().strip()
+            rows = [r.rstrip() for r in f if not r.lstrip().startswith("#")]
     except OSError:
         return ""
+    return "\n".join(r for r in rows if r.strip()).strip()
 
 
 def load_state():
