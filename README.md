@@ -1,3 +1,4 @@
+下载完整打包版：[点这里下载 zip](https://github.com/zhengunduzi/dafeiyu-wechat-bot/releases/tag/v1.0.0)
 [README-github.md](https://github.com/user-attachments/files/34230612/README-github.md)
 # 大肥鱼 · 让 AI 住进微信
 
