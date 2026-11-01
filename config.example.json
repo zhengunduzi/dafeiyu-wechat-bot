@@ -1,0 +1,21 @@
+{
+  "group": "示例群",
+  "bot_name": "大肥鱼",
+  "api_url": "https://api.deepseek.com/v1/chat/completions",
+  "api_key": "",
+  "model": "deepseek-chat",
+  "vision_model": "",
+  "max_tokens": 500,
+  "timeout": 60,
+  "scan_ports": [8326],
+  "chats": [
+    { "name": "示例群", "mention": true, "proactive": false, "save_media": false },
+    { "name": "私聊示例", "mention": false, "proactive": true, "save_media": true }
+  ],
+  "context_messages": 12,
+  "batch_seconds": 6,
+  "aliases": { "wxid_示例群友": "小明" },
+  "proactive_idle_minutes": 30,
+  "proactive_min_gap_minutes": 120,
+  "disable_uia": false
+}
